@@ -1,0 +1,89 @@
+#delivery{
+    position: relative;
+}
+#delivery .subtitle{
+    margin-bottom: 35px;
+}
+#delivery .text, #geo-block{
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    font-weight: 400;
+    color: inherit;
+    text-align: left;
+}
+#delivery .text p, #geo-block p{
+    margin: 0 0 20px;    
+}
+#geo-block{
+    margin: 0 0 100px;
+}
+#geo-block p.delivery, #geo-block p.priority-points{
+    font-family: 'DINPro-Condensed', Arial, sans-serif;
+    font-size: 24px;
+    line-height: 26px;
+    font-weight: 600;    
+    margin-top: 50px;
+}
+#map{
+    width: 100%;
+    height: 600px;
+}
+#geo-block .geo-map-info{
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;    
+    margin: 0;
+    overflow: hidden;
+}
+#geo-block .delivery-point-address{
+    margin: 0 2.5% 45px 0;
+    -webkit-column-break-inside: avoid;
+    page-break-inside: avoid; /* Makes effect only in Firefox */
+    break-inside: avoid; /* IE10+, Opera 11.1—12.1 */    
+}
+#geo-block .delivery-point-address p{
+    margin: 0 0 10px;
+}
+#geo-block .delivery-point-address p span{
+    font-weight: 600;
+}
+
+@media (max-width: 767px) and (min-width: 480px){
+    #geo-block{
+        margin: 0 0 50px;
+    }    
+    #geo-block p.delivery, #geo-block p.priority-points{
+        margin-top: 30px;        
+    } 
+    #map{
+        height: 250px;
+    } 
+    #geo-block .geo-map-info{
+        -webkit-column-count: 1;
+        -moz-column-count: 1;
+        column-count: 1;
+    }
+    #geo-block .delivery-point-address{
+        margin: 0 0 30px;
+    }
+}
+@media (max-width: 479px) {
+    #geo-block{
+        margin: 0 0 50px;
+    }    
+    #geo-block p.delivery, #geo-block p.priority-points{
+        margin-top: 30px;        
+    } 
+    #map{
+        height: 400px;
+    } 
+    #geo-block .geo-map-info{
+        -webkit-column-count: 1;
+        -moz-column-count: 1;
+        column-count: 1;
+    }
+    #geo-block .delivery-point-address{
+        margin: 0 0 30px;
+    }    
+}

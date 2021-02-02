@@ -1,0 +1,181 @@
+@font-face {
+	font-family: 'DINPro';
+    font-display: swap;
+	src: url('fonts/DINPro.eot');
+	src: local('☺'), 
+        url('fonts/DINPro.woff2') format('woff2'),
+        url('fonts/DINPro.woff') format('woff'),
+        url('fonts/DINPro.ttf') format('truetype'), 
+        url('fonts/DINPro.svg') format('svg');
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'DINPro';
+    font-display: swap;
+	src: url('fonts/DINPro-Medium.eot');
+	src: local('☺'), 
+        url('fonts/DINPro-Medium.woff2') format('woff2'),
+        url('fonts/DINPro-Medium.woff') format('woff'),
+        url('fonts/DINPro-Medium.ttf') format('truetype'), 
+        url('fonts/DINPro-Medium.svg') format('svg');
+	font-weight: 500;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'DINPro';
+    font-display: swap;
+	src: url('fonts/DINPro-Bold.eot');
+	src: local('☺'), 
+        url('fonts/DINPro-Bold.woff2') format('woff2'),
+        url('fonts/DINPro-Bold.woff') format('woff'),
+        url('fonts/DINPro-Bold.ttf') format('truetype'), 
+        url('fonts/DINPro-Bold.svg') format('svg');
+	font-weight: 600;
+	font-style: normal;
+}
+
+html{
+    height: 100%;
+}
+body {
+    position: relative;    
+    font-family: 'DINPro', Arial, sans-serif;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 400;
+	color: #1e293f;
+    max-width: 100%;
+	height: auto;
+    overflow-x: hidden;
+    background: #ffffff;	
+	padding: 0;
+	margin: 0;
+}
+#body-inner{
+    height:100%;
+    background: transparent url('../images/zabor-footer.png') repeat bottom center;
+}
+h1{
+    display: inline-block;
+    width: 100%;
+    font-family: inherit;
+    font-size: 48px;
+    line-height: 48px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 70px auto 50px;
+    text-align: center;
+    letter-spacing: 2px;
+}
+#header{
+	display: block;
+	position: relative;
+    width: 100%;
+    background: #ffffff;
+    z-index: 5;
+}
+.content-container{
+	display: block;
+    width: 100%;
+    height: auto;
+    max-width: 980px;
+	margin: 0 auto;    
+}
+#header p{
+    display: block;
+    width: 100%;
+    font-family: inherit;
+    font-size: 22px;
+    line-height: 26px;
+    font-weight: normal;
+    text-align: center;
+    color: inherit;
+    margin: 0 auto 10px;
+    padding: 0;
+}
+#header a{
+    display: block;
+    width: 100%;
+    font-family: inherit;
+    font-size: 22px;
+    line-height: 26px;
+    font-weight: 500;
+    text-align: center;    
+    color: #81a3be;
+    margin: 30px 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    text-transform: uppercase;
+}
+#header a:hover{
+    text-decoration: none;
+}
+#header img{
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+#footer{
+	display: block;
+	position: relative;
+    width: 100%;
+    min-height: 200px;
+    background: transparent url('../images/zabor.png') repeat-x top center;
+    z-index: 10;
+    margin: -50px 0 0;
+    padding: 50px 0 0;
+}
+#requisites{
+    display: block;
+    max-width: 100%;
+    margin: 20px auto;
+    font-weight: 500;
+    text-align: center;    
+}
+#requisites p{
+    margin: 0 0 5px;
+}
+
+@media (max-width: 1000px) and (min-width: 768px) {
+    .content-container{
+        max-width: 760px;
+    }
+    #footer{
+        margin: -20px 0 0;
+    }
+}
+@media (max-width: 767px) and (min-width: 480px){
+    .content-container{
+        max-width: 94%;
+        margin: 0 3%;
+    }
+    #footer{
+        margin: -20px 0 0;
+    }    
+}
+
+@media (max-width: 479px) {
+    .content-container{
+        max-width: 94%;
+        margin: 0 3%;
+    }
+    h1{
+        font-size: 25px;
+        line-height: 27px;
+        margin: 20px auto;
+    }
+    #header p, #header a{
+        font-size: 18px;
+        line-height: 20px;
+    }
+    #footer{
+        margin: -20px 0 0;
+    } 
+    #requisites p{
+        font-size: 16px;
+        line-height: 18px;
+    }
+}

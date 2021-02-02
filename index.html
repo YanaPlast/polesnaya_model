@@ -1,0 +1,1037 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+<head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="x-rim-auto-match" content="none">
+
+    <title><?= $title ?></title>
+    <meta name="description" content="<?= $description ?>"/>
+    <meta name="keywords" content="<?= $keywords ?>"/>
+    <link href="<?= $app->urlRelCanonical() ?>" rel="canonical"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Патентное бюро Железно">
+    <meta property="og:url" content="<?= $app->urlRelCanonical() ?>">
+    <meta property="og:locale" content="ru_RU">
+    <meta property="og:image" content="<?= $app->urlRelCanonical() ?>images/og_image.jpg">
+    <meta property="og:title" content="Зарегистрируй товарный знак. Защити бизнес от конкурентов.">
+    <meta property="og:description"
+          content="Оставьте заявку на регистрацию торговой марки &#8482; пока не поздно.Ускоренные схемы регистрации. Проверка по закрытым базам ФИПС">
+
+    <link rel="preload" href="styles/fonts/DINPro.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="styles/fonts/DINPro-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="styles/fonts/DINPro-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="styles/fonts/DINPro-Light.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="styles/fonts/DINPro-Italic.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="styles/fonts/DINPro-MediumItalic.woff2" as="font" type="font/woff2"
+          crossorigin="anonymous">
+    <link rel="preload" href="styles/fonts/DINPro-CondensedLight.woff2" as="font" type="font/woff2"
+          crossorigin="anonymous">
+    <link rel="preload" href="styles/fonts/DINPro-CondensedRegular.woff2" as="font" type="font/woff2"
+          crossorigin="anonymous">
+    <link rel="preload" href="styles/fonts/DINPro-CondensedMedium.woff2" as="font" type="font/woff2"
+          crossorigin="anonymous">
+    <link rel="preload" href="styles/fonts/DINPro-CondensedBold.woff2" as="font" type="font/woff2"
+          crossorigin="anonymous">
+    <link rel="preload" href="styles/fonts/DINPro-CondensedBoldItalic.woff2" as="font" type="font/woff2"
+          crossorigin="anonymous">
+    <link rel="preload" href="styles/fonts/RUBSN.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="dns-prefetch" href="//yastatic.net/">
+    <link rel="dns-prefetch" href="//google-analytics.com/">
+
+    <link rel="stylesheet" href="styles/critical.css">
+
+
+    <script type="text/javascript">
+        var __cs = __cs || [];
+        __cs.push(["setCsAccount", "eQZbq56HiIiC2kheP3C1pDE4TUg9A1NO"]);
+    </script>
+    <script type="text/javascript" async src="https://app.uiscom.ru/static/cs.min.js"></script>
+
+</head>
+
+<body>
+
+<header id="header" class="<?= $webp ?> <?= $header_class?>">
+    <div id="top">
+        <div class="content-container">
+            <div class="menu-container show-mobile">
+                <span>&nbsp;</span>
+                <ul class="menu">
+                    <li><a href="#money" class="button-scroll">Что дает регистрация</a></li>
+                    <li><a href="#compare" class="button-scroll">5 преимуществ</a></li>
+                    <li><a href="#packages" class="button-scroll">Тарифы</a></li>
+                    <li><a href="#feedback" class="button-scroll">Отзывы</a></li>
+                    <li><a href="#call-modal" class="fancybox">Заказать звонок</a></li>         
+                </ul>
+            </div>         
+            <div class="columns">               
+                <div class="logo">
+                    <p class="img-container">
+                        <picture>
+                            <source srcset="images/logo.webp" type="image/webp">
+                            <img src="images/logo.jpg" alt="" title="Патентное бюро Железно">
+                        </picture>
+                    </p>
+                    <p>Патентное бюро</p>
+                </div>
+                <div class="top-middle">
+                    <p>Работаем по всей России</p>
+                </div>
+                <div class="phone-block">
+                    <a class="phone" href="tel:84951047454">8 495 104-74-54</a>
+                    <a class="button button-light fancybox" href="#call-modal">Заказать звонок</a>
+                    <a class="whatsapp" href="https://api.whatsapp.com/send?phone=79229092784<?= $whatsapp_text ?>" target="_blank"></a>
+                </div>
+            </div>
+        </div><!-- end of content-container -->
+    </div><!-- end of top -->
+    <div id="header-main">
+        <div class="content-container">
+            <div class="title-container">
+                <div>
+                    <h1>Патент на изобретение и полезную модель</h1>
+                </div>
+                <p class="subtitle"><span>Запатентуем</span> то, что другие не могут</p>
+            </div>
+            <div class="columns columns-new">
+                <div class="form-container">
+                    <div class="form-container-inner">
+                        <p class="form-title">Проверим<br>ваше изобретение</p>
+                        <p class="form-subtitle">Бесплатно. По базам ФИПС</p>
+                        <form method="post" action="success.php">
+                            <input type="hidden" name="title" value="proverka"><span class="name"></span>
+                            <select class="custom-list" name="packages">
+                                <option value="Бесплатная проверка 0 руб" data-title="Бесплатно проверим ваш знак" data-subtitle="по закрытым базам Роспатента" data-form="proverka">Бесплатная проверка 0 руб.</option>
+                                <option value="Антикризисное предложение 4990 руб" data-title="Подадим заявку за 24 часа. Форма 940" data-subtitle="Отсрочка - 70 дней. Акция Covid-19" data-form="Self">Антикризисное предложение 4990 руб</option>
+                                <option value="Самостоятельная работа 9990 руб" data-title="Госпошлины со скидкой 30%" data-subtitle="Полная проверка знака. Сопровождение" data-form="Full">Самостоятельная работа 9990 руб</option>
+                                <option value="Регистрация под ключ 19990 руб" data-title="Товарный знак под ключ" data-subtitle="Даем полную финансовую гарантию" data-form="Premium">Регистрация под ключ 19990 руб</option>
+                                <?= $package4 ?>
+                            </select>
+                            <label for="name" class="columns">
+                                <input type="text" name="name" placeholder="Ваше имя" data-hint="имя" autocomplete="off">
+                                <span class="name"></span>
+                            </label>
+                            <label for="phone" class="columns">
+                                <input type="text" name="phone" placeholder="Ваш телефон" data-hint="телефон" autocomplete="off">
+                                <span class="phone"></span>
+                            </label>
+                            <input type="submit" value="Оставить заявку" class="button button-green">
+                        </form>
+                        <p class="whatsapp">или <a href="https://api.whatsapp.com/send?phone=79229092784<?= $whatsapp_text ?>" target="_blank">напишите нам в Whatsapp</a></p>
+                    </div>
+                </div>            
+                <ul class="features">
+                    <li><p><span class="blue">”Железный” патент,</span>который не обойти в суде.</p></li>
+                    <li><p><span class="blue">Финансовая гарантия.</span>Запатентуем или вернем деньги.</p></li>
+                    <li><p><span class="blue">Скидка 30% на Госпошлины.</span>Для клиентов патентного бюро "Железно".</p></li>
+                    <li><p><span class="blue">98% наших клиентов</span> успешно получают патент.</p></li>
+                    <li><p><span class="blue">7 месяцев вместо 18.</span>Ускоряем регистрацию. Без доплат.</p></li>
+                </ul>    
+            </div>
+        </div><!-- end of content-container -->
+    </div><!-- end of header-main --> 
+
+
+</header><!-- end of header -->
+
+<main id="content">
+
+    <div id="spheres">
+        <div class="content-container">
+            <div class="inner">
+                <div class="title-container">
+                    <h2>Зачем нужен <span>патент?</span></h2>
+                    <p class="subtitle">Какие <span>преимущества</span> даст вам патент на изобретение</p>
+                </div>
+
+                <div class="columns-with-gap">
+
+                    <div class="item-wrapper business">
+                        <div class="item">
+                            <p class="additional-title">
+                                Бизнесмену: </p>
+                            <div class="img-container">
+                                    <picture>
+                                        <source class="lazy" data-src="images/spheres_business.webp" type="image/webp">
+                                        <img class="lazy" data-src="images/spheres_business.webp"
+                                             alt="преимущества для бизнесменов"
+                                             title="Зачем нужен патент бизнесу">
+                                    </picture>
+                            </div>
+                            <div class="text">
+                                <ul>
+                                    <li><span>Легальная монополия</span>
+                                        <p>Вы законно запретите конкурентам производить и продавать копии ваших товаров. Патент защищает от подделок.</p>
+                                    </li>
+                                    <li><span>Способ наказать конкурента. Штраф до 5 млн. руб.</span>
+                                        <p>Если конкурент копирует ваш товар, патент на изобретение защитит вас в суде.
+                                        Вы сможете взыскать с нарушителя до 5 000 000 руб. </p>
+                                    </li>
+                                    <li><span>+1 фактор доверия для инвесторов</span>
+                                        <p>Патент на изобретение подтверждает, что вы не “фирма-однодневка”, а серьезный бизнес.</p>
+                                    </li>
+                                    <li><span>Маркетинговые преимущества</span>
+                                        <p>Вы доработали свой товар? Запатентуйте изменения, чтобы конкуренты не могли повторить их полностью или частично.</p>
+                                    </li>
+                               </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="item-wrapper scientists ">
+                        <div class="item">
+                            <p class="additional-title">
+                                Ученому:</p>
+                            <div class="img-container">
+                                <picture>
+                                    <source class="lazy" data-src="images/spheres_inventor.webp" type="image/webp">
+                                    <img class="lazy" data-src="images/spheres_inventor.jpg"
+                                         alt="преимущества для ученых"
+                                         title="Зачем нужен патент ученому">
+                                </picture>
+                            </div>
+                            <div class="text">
+                                <ul>
+                                    <li><span>Подтверждение авторства</span>
+                                        <p>Если изобретение не запатентовано, вы не сможете доказать, что оно ваше. Кто первым подал заявку в ФИПС, тот и получит исключительные права.</p>
+                                    </li>
+                                    <li><span>Способ заработать больше</span>
+                                        <p>Вы можете продать или сдать в аренду патент на своё изобретение и получать гарантированный пассивный доход.</p>
+                                    </li>
+                                    <li><span>Итог вашей работы</span>
+                                        <p>Патент на изобретение необходим, если вы защищаете диссертацию или выиграли грант. Это закономерный итог исследовательской деятельности.</p>
+                                    </li>
+                                    <li><span>Рост авторитета</span>
+                                        <p>Когда у вас на руках патент, ситуация, что кто-то повторит ваше изобретение, исключена. Вместе с патентами вы получаете признание и уважение коллег.</p>
+                                    </li>
+                               </ul>
+                             </div>
+                         </div>
+                     </div>
+
+                </div>
+            </div>
+        </div><!-- end of content-container -->
+    </div><!-- end of spheres -->
+
+
+    <div class="action hide-mobile">
+        <div class="content-big-container">
+            <div class="content-container">
+                <div class="columns">
+                    <div class="column">  
+                        <p class="new-clients"><span class="vertical">Акция</span> для новых клиентов <span
+                                    class="action-info">с <?php echo($action_begin); ?>
+                                по <?php echo($action_end); ?></span></p>
+                        <p class="action-date">осталось дней: <span
+                                    class="blue"><?php echo($action_days_show); ?></span></p>
+                    </div>
+                    <div class="column">
+                        <p class="present"><?=$present?></p>
+                        <p class="note">Лучший тариф по спеццене.<span class="nowrap">5000 руб.</span></p>
+                        <p class="present"><?=$pr29?></span></p>
+                        <p class="note"><a class="fancybox" href="/images/prikaz.jpg">приказ о проведении рекламной акции №82</a></p>
+                    </div>
+                </div>
+            </div><!-- end of content-container -->
+        </div><!-- end of content-big-container -->
+    </div><!-- end of action -->
+
+   <div id="five_reasons">
+        <div class="content-container">
+            <div class="inner five_reasons-inner">
+                <div class="title-container">
+                    <p class="title">5 причин <span>патентовать изобретения в “Железно”</span></p>
+                </div>
+                <div id="five-reasons-slider">
+
+                    <div class="columns-with-gap">
+                        <div class="item-wrapper">
+                            <div class="item">
+                                <p class="item-head"><span>Запатентуем то, что другие не могут</span><br>Работаем с запросами Роспатента и отказами</p>
+                                <p>Иногда, чтобы успешно получить патент, не хватает совсем немного. Правильно ответить на запрос Роспатента, слегка изменить конструкцию или доработать изобретение и расширить область применения.</p>
+                                <p><b>Наши специалисты анализируют не только патентные базы, но и внепатентные источники.</b> Это помогает глубже взглянуть на изобретение: найти новые сферы использования, улучшить конструкцию и расширить функционал.</p>
+                                <p><span>Мы снижаем риск отказа за счет детальной проработки патента и грамотных ответов на запросы.</span></p>
+                            </div>
+                        </div>
+                        <div class="item-wrapper">
+                            <div class="item">
+                                <div class="img-container">
+                                    <picture>
+                                        <source class="lazy" data-src="images/five-reasons_001.webp" type="image/webp">
+                                        <img class="lazy" data-src="images/five-reasons_001.jpg"
+                                             alt="преимущества для бизнесменов"
+                                             title="Зачем нужен патент бизнесу">
+                                    </picture>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="columns-with-gap">
+                        <div class="item-wrapper">
+                            <div class="item">
+                                <p class="item-head"><span>“Железный” патент, который не обойти в суде</span> 100% защита вашего изобретения</p>
+                                <p>Если в патенте ошибки или неточности, работать он не будет. В суде такой “патент” бесполезен. </p>
+                                <p>Чтобы патент действительно работал, необходимо грамотно составить описание и формулу полезной модели. Причем правильно не только с технической, но и с юридической точки зрения.</p>
+                                <p><span>В нашем бюро юристы работают совместно с учеными.</span></p>
+                                <ul>
+                                    <li>Профильный специалист-изобретатель готовит материалы для заявки.</li>
+                                    <li>Юрист по защите интеллектуальной собственности проводит финальную проверку перед отправкой документов в Роспатент.</li>
+                                </ul>
+                                <p><span>Финальная проверка нужна, чтобы убедиться, что ваш патент поможет доказать нарушение прав в суде.</span></p>
+                            </div>
+                        </div>
+                        <div class="item-wrapper">
+                            <div class="item">
+                                <div class="img-container">
+                                    <picture>
+                                        <source class="lazy" data-src="images/five-reasons-01.webp" type="image/webp">
+                                        <img class="lazy" data-src="images/five-reasons-01.jpg"
+                                             alt="преимущества для бизнесменов"
+                                             title="Зачем нужен патент бизнесу">
+                                    </picture>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                   <div class="comparing" data-da=".five_reasons-inner, 770, 2">
+                        <div class="title-container">
+                            <p class="additional-title">Какой патент будет работать, а какой бесполезен<br><span>2 примера из нашей практики</span></p>
+                        </div>
+                        <div class="columns-with-gap">
+
+                            <div class="item-wrapper">
+                                <p class="compare-item-title">Нерабочий патент</p>
+                                <div class="item">
+                                    <div class="img-container">
+                                        <picture>
+                                            <source class="lazy" data-src="images/compare-bad.webp" type="image/webp"/>
+                                            <img class="lazy" data-src="images/compare-bad.jpg"
+                                                 alt="преимущества для бизнесменов"
+                                                 title="Зачем нужен патент бизнесу"/>
+                                        </picture>
+                                    </div>
+                                    <p class="compare-descript">Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Послушавшись имени ipsum заманивший, точках курсивных, даль буквенных снова. Великий журчит снова страна вскоре, над взгляд ведущими рыбными даль языкового строчка, речью но безопасную, эта жизни, своего? Вдали, страна инициал.</p>
+                                    <div class="compare-link"><a href="https://sudact.ru/arbitral/doc/XlWqBd7sA9gp/">https://sudact.ru/arbitral/doc/XlWqBd7sA9gp/</a></div>
+                                </div>                              
+                            </div>
+
+                            <div class="item-wrapper">
+                                <p class="compare-item-title">Рабочий патент</p>
+                                <div class="item">
+                                    <div class="img-container">
+                                        <picture>
+                                            <source class="lazy" data-src="images/compare-good.webp" type="image/webp">
+                                            <img class="lazy" data-src="images/compare-good.png"
+                                                 alt="преимущества для бизнесменов"
+                                                 title="Зачем нужен патент бизнесу">
+                                        </picture>
+                                    </div>
+                                    <p class="compare-descript">Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вскоре переписали журчит собрал щеке, маленькая, текстами грустный прямо повстречался, раз своего океана рыбными они рыбного. Решила пор от всех власти семь, о подзаголовок инициал напоивший всеми назад снова эта. Они.</p>
+                                    <div class="compare-link"><a href="https://sudact.ru/arbitral/doc/XlWqBd7sA9gp/">https://sudact.ru/arbitral/doc/XlWqBd7sA9gp/</a></div>
+                                </div>
+                            </div>
+
+                        </div>            
+                    </div>
+
+
+
+                    <div class="columns-with-gap">
+                        <div class="item-wrapper">
+                            <div class="item">
+                                <p class="item-head"><span>Зарегистрируем ваш патент или вернем деньги</span><br>Бесплатная проверка. Финансовая гарантия</p>
+                                <p>Самое главное в патентовании изобретений - не собрать пакет документов, а <b>вовремя найти похожие проекты и “отстроиться” от них.</b> Если этого не сделать, Роспатент откажет в регистрации.</p>
+                                <p>Мы бесплатно проверим ваше изобретение по методам ФИПС. Если найдутся аналогичные или похожие патенты, предложим доработки.</p>
+                                <p><span>В среднем 98% наших клиентов успешно получают патенты. Если мы не сможем вам помочь, вернем полную стоимость услуг. Это прописано в договоре.</span></p>
+                            </div>
+                        </div>
+                        <div class="item-wrapper">
+                            <div class="item">
+                                <div class="img-container">
+                                    <picture>
+                                        <source class="lazy" data-src="images/five-reasons-03.webp" type="image/webp">
+                                        <img class="lazy" data-src="images/five-reasons-03.jpg"
+                                             alt="преимущества для бизнесменов"
+                                             title="Зачем нужен патент бизнесу">
+                                    </picture>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="columns-with-gap">
+                        <div class="item-wrapper">
+                            <div class="item">
+                                <p class="item-head"><span>7 месяцев вместо 18</span><br>Ускоряем регистрацию. Без доплат</p>
+                                <p>Мы оцениваем, что может “не понравиться” Роспатенту в заявке, и закладываем ответы на эти вопросы.</p>
+                                <ul>
+                                    <li>Четко описываем критерии патентоспособности (новизна, промышленная применимость, изобретательский уровень).</li>
+                                    <li>Готовим чертежи, схемы и иллюстрации. </li>
+                                    <li>Перепроверяем документы перед подачей.</li>
+                                </ul>
+                                <p>Мы максимально снижаем риск запроса от Роспатента, но если он все-таки придет, мы сразу об этом узнаем и начнем работу:</p>
+                                <ul>
+                                    <li>Ответ на запрос формальной экспертизы - 1 рабочий день</li>
+                                    <li>Ответ на запрос экспертизы по существу - до 5 рабочих дней</li>
+                                </ul>
+                                <p>В бюро “Железно” делопроизводство ведется в электронном виде. От подачи заявки до получения патента проходит в среднем 7 мес, а по регламентам Роспатента на это отводится до 18 мес.</p>
+                                <p><span>С “Железно” регистрация на 11 мес быстрее. И всё это время вы уже сможете использовать свой патент и получать прибыль.</span></p>
+                            </div>
+                        </div>
+                        <div class="item-wrapper">
+                            <div class="item">
+                                <div class="img-container">
+                                    <picture>
+                                        <source class="lazy" data-src="images/five-reasons-05.webp" type="image/webp">
+                                        <img class="lazy" data-src="images/five-reasons-05.jpg"
+                                             alt="преимущества для бизнесменов"
+                                             title="Зачем нужен патент бизнесу">
+                                    </picture>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="columns-with-gap">
+                        <div class="item-wrapper">
+                            <div class="item">
+                                <p class="item-head"><span>Все сделаем за вас</span><br> Изобретатели и ученые в штате</p>
+                                <p>Чтобы подать заявку в Роспатент, вам не нужно выпускать пробный образец изобретения, рисовать чертежи и готовить описания. Всё это сделают наши эксперты.</p>
+                                <p>В штате патентного бюро - профильные специалисты-ученые, каждый - эксперт по своему направлению:</p>
+                                <ul>
+                                    <li>Иванов И. И. - к.т.н, изобретатель, член РАН.</li>
+                                    <li>Петров П. П. - к.м.н.</li>
+                                    <li>Сидоров Б. Б. - к. п. н.</li>
+                                </ul>
+                                <p>Специалист вникает в суть вашего изобретения и составляет его описание так, чтобы Роспатент не мог ни к чему придраться. Если изобретение технически сложное, эксперт подготовит чертеж или составит схему.</p>
+                                <p><b>Достаточно одной телефонной консультации, чтобы начать работу.</b></p>
+                            </div>
+                        </div>
+                        <div class="item-wrapper">
+                            <div class="item">
+                                <div class="img-container">
+                                    <picture>
+                                        <source class="lazy" data-src="images/reason-005.jpg" type="image/webp">
+                                        <img class="lazy" data-src="images/reason-005.jpg"
+                                             alt="преимущества для бизнесменов"
+                                             title="Зачем нужен патент бизнесу">
+                                    </picture>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div> <!--end of content-container -->
+    </div> <!--end of five_reasons -->
+
+    <div id="team">
+        <div class="content-container">
+            <div class="title-container">
+                <p class="title">Патент-команда специалистов<span>Всё под контролем</span></p>
+            </div>
+            <div id="team-slider">
+
+                <a class="fancybox-gallery" data-fancybox="team"
+                   data-caption="Морозова Александра, управляющий патентного бюро"
+                   href="images/team/sotrudnik1.jpg">
+                   <p class="slider-header">Эксперт-изобретатель</p>
+                    <picture>
+                        <source class="lazy" data-src="images/team/sotrudnik1-mini.webp" type="image/webp">
+                        <img class="lazy" data-src="images/team/sotrudnik1-mini.jpg" alt=""/>
+                    </picture>
+                    <p class="team-info">
+                        <span class="team-name">Морозова Александра</span>
+                        <span class="team-position">Управляющий патентного бюро</span>
+                    </p>
+                </a>
+                <a class="fancybox-gallery" data-fancybox="team"
+                   data-caption="Овсянникова Наталья, патентный поверенный" href="images/team/sotrudnik2.jpg">
+                   <p class="slider-header">Патентный поверенный</p>
+                    <picture>
+                        <source class="lazy" data-src="images/team/sotrudnik2-mini.webp" type="image/webp">
+                        <img class="lazy" data-src="images/team/sotrudnik2-mini.jpg" alt=""/>
+                    </picture>
+                    <p class="team-info">
+                        <span class="team-name">Овсянникова Наталья</span>
+                        <span class="team-position">Патентный поверенный</span>
+                    </p>
+                </a>
+                <a class="fancybox-gallery" data-fancybox="team"
+                   data-caption="Шаклеин Александр, помощник патентного поверенного"
+                   href="images/team/sotrudnik4.jpg">
+                   <p class="slider-header">Помощник патентного поверенного</p>
+                    <picture>
+                        <source class="lazy" data-src="images/team/sotrudnik4-mini.webp" type="image/webp">
+                        <img class="lazy" data-src="images/team/sotrudnik4-mini.jpg" alt=""/>
+                    </picture>
+                    <p class="team-info">
+                        <span class="team-name">Шаклеин Александр</span>
+                        <span class="team-position">Помощник патентного поверенного</span>
+                    </p>
+                </a>
+                <a class="fancybox-gallery" data-fancybox="team"
+                   data-caption="Ваймер Антонина, помощник патентного поверенного"
+                   href="images/team/sotrudnik5.jpg">
+                   <p class="slider-header">Помощник патентного поверенного</p>
+                    <picture>
+                        <source class="lazy" data-src="images/team/sotrudnik5-mini.webp" type="image/webp">
+                        <img class="lazy" data-src="images/team/sotrudnik5-mini.jpg" alt=""/>
+                    </picture>
+                    <p class="team-info">
+                        <span class="team-name">Ваймер Антонина</span>
+                        <span class="team-position">Помощник патентного поверенного</span>
+                    </p>
+                </a>
+                <a class="fancybox-gallery" data-fancybox="team"
+                   data-caption="Ермаков Александр, эксперт по доработке знаков"
+                   href="images/team/sotrudnik8.jpg">
+                   <p class="slider-header">Эксперт по доработке знаков</p>
+                    <picture>
+                        <source class="lazy" data-src="images/team/sotrudnik8-mini.webp" type="image/webp">
+                        <img class="lazy" data-src="images/team/sotrudnik8-mini.jpg" alt=""/>
+                    </picture>
+                    <p class="team-info">
+                        <span class="team-name">Ермаков Александр</span>
+                        <span class="team-position">Эксперт по доработке знаков</span>
+                    </p>
+                </a>
+            </div>
+            <div class="columns">
+                <div class="column">
+                    <p class="subtitle">Видео о компании</p>
+                    <div id="video-team" class="video"></div>
+                </div>
+                <div class="column">
+                    <p class="subtitle">История патентного бюро:</p>
+                    <p>2013 год - На нашу производственную компанию напали патентные тролли. Бизнес оказался под
+                        угрозой. Патентные бюро не смогли нас защитить. Судебные процессы.</p>
+                    <p>2014 год - Ценой проб и ошибок мы отстояли свой бизнес. И поняли, что интеллектуальная
+                        собственность – главнейший актив любой компании.</p>
+                    <p>2015 год – Создание патентного отдела. Учеба: ВОИС ( Швейцария), курсы ФИПС, академия
+                        Сколково.</p>
+                    <p>2016 год – Отдел становится отдельным направлением бизнеса. Появляются первые внешние клиенты.</p>
+                    <p>2018 год – Патентное бюро полного цикла. От стратегии по защите интеллектуальной собственности до
+                        полной ее реализации.</p>
+                </div>
+            </div>
+        </div><!-- end of content-container -->
+    </div><!-- end of team -->
+
+    <div id="packages">
+        <div class="content-container">
+            <div class="title-container">
+                <p class="title">3 железных варианта <span>сотрудничества</span></p>
+                <p class="subtitle"><span>Цены на услуги фиксированные</span> Никаких доплат и скрытых платежей</p>
+            </div>
+            <div class="columns">
+                <p class="choice"><span>83% выбирают регистрацию с финансовой гарантией</span></p>
+                <div class="column small">
+                    <p class="column-title"><span class="blue">COVID-19</span> - специальное антикризисное предложение</p>
+                    <ul>
+                        <li>Экспертный поиск на тождество и сходство</li>
+                        <li>Подача заявки в Роспатент</li>
+                        <li>Возможность доплатить до выбранного вами тарифа в любой момент</li>                 
+                    </ul>
+                    <p class="price"><span class="value">4 990</span> <span class="cur">Р</span></p>
+                    <div class="button-container">
+                        <a href="#anticrisis" class="button button-scroll">Подробнее</a>
+                    </div>
+                </div>
+                <div class="column big">
+                    <p class="column-title">Вы хотите сэкономить и будете сами <span class="blue">«отвечать на запросы»</span></p>
+                    <ul>
+                        <li>Экспертный поиск на тождество и сходство</li>
+                        <li>Подача заявки в Роспатент</li>
+                        <li>Формирование квитанций для оплаты госпошлин со скидкой - 30%</li>
+                        <li>Комплект инструкций для самостоятельных действий</li>
+                        <li>Дорожная карта по работе с Роспатентом</li>
+                    </ul>
+                    <p class="price"><span class="value">9 990</span> <span class="cur">Р</span></p>
+                    <div class="button-container">
+                        <a href="#order-modal" class="button fancybox" data-package="Вариант 2">Оставить
+                            заявку</a>
+                    </div>
+                </div>
+                <div class="column medium">
+                    <p class="column-title">Регистрация <span class="blue">Под ключ</span> с 100% финансовой гарантией успеха.</p>
+                    <ul>
+                        <li>Экспертный поиск на тождество и сходство</li>
+                        <li>Подача заявки в Роспатент</li>
+                        <li>Формирование квитанций для оплаты госпошлин со скидкой - 30%</li>
+                        <li>Полное ведение делопроизводства</li>
+                        <li>Работа с отказами</li>
+                         <li>Привлечение экспертов Роспатента, когда знак "сложный".</li>
+                        <li>Финансовая гарантия</li>                    
+                        <li>Получение свидетельства</li>                            
+                    </ul>
+                    <p class="note"><?= $pr28 ?><sup>**</sup></p>
+                    <p class="price"><span class="value">19 990</span> <span class="cur">Р</span> <span class="old"><span class="value">24 900</span> <span class="cur">Р</span></span></p>
+                    <div class="button-container">
+                        <a href="#order-modal" class="button button-blue fancybox" data-package="Вариант 3">Оставить заявку</a>
+                    </div>
+                </div>
+            </div>
+            <div class="notice">
+                <p><span><sup>*</sup> «+ государственная пошлина при подаче заявки в России — <span class="nowrap">10 500 руб.</span></span>
+                    и через 7-8 месяцев — <span class="nowrap">12 600 рублей</span> за регистрацию знака»</p>
+                <p><sup>**</sup> При оформлении заказа <span class="action-date"
+                                                             data-text="до <?php echo($action_end_rus); ?> года"></span>
+                    (<a class="fancybox" href="/images/prikaz.jpg">Приказ о проведении рекламной акции №82</a>)</p>
+            </div>
+        </div><!-- end of content-container -->
+    </div><!-- end of packages -->
+
+    <div id="registration">
+        <div class="content-container">
+            <div class="title-container">
+                <h3>Путь клиента:</h3>
+                <p class="subtitle"><span>Мы всегда на связи.</span> Подробно рассказываем о том, что происходит с
+                    заявкой</p>
+            </div>
+            <div class="columns">
+                <div id="step1" class="step <?= $webp ?>">
+                    <p class="step-title">Вы оставляете заявку</p>
+                    <p>Мы перезваниваем<br>Уточняем информацию</p>
+                    <p><?= $pr10 ?></p>
+                    <p class="summary">10 минут</p>
+                </div>
+                <div id="step2" class="step <?= $webp ?>">
+                    <p class="step-title">Бесплатно проверяем ваше изобретение</p>
+                    <p>Оцениваем признаки патентоспособности</p>
+                    <p>Изучаем патентные базы</p>
+                    <p class="summary">8 часов</p>
+                </div>
+                <div id="step3" class="step <?= $webp ?>">
+                    <p class="step-title">Подаем заявку в Роспатент</p>
+                    <p>Изучаем иностранные базы (мировой поиск)</p>
+                    <p>Готовим пакет документов для патентования</p>
+                    <p class="summary">3-4 дня</p>
+                </div>
+            </div>
+            <div class="columns">
+                <div id="step4" class="step <?= $webp ?>">
+                    <p class="step-title">Вы оплачиваете патентование</p>
+                    <ul>
+                        <li>Наши услуги (по выбранному тарифу)</li>
+                        <li>Пошлину за подачу заявки <span class="nowrap">(XXX)</span></li>
+                    </ul>
+                    <p class="summary">1-3 дня</p>
+                </div>
+                <div id="step5" class="step <?= $webp ?>">
+                    <p class="step-title">Роспатент проводит <span>экспертизу</span></p>
+                    <p>Мы отвечаем на запросы Роспатента.</p>
+                    <p>Информируем вас о ходе регистрации.</p>
+                    <p class="summary">6-8 месяцев</p>
+                </div>
+                <div id="step6" class="step <?= $webp ?>">
+                    <p class="step-title">Роспатент <span>регистрирует</span> ваше изобретение</p>
+                    <p>Вы оплачиваете регистрационную пошлину Роспатента <span class="nowrap">(12 600 Р)</span>.</p>
+                    <p>Вы получаете свидетельство.</p>
+                    <p class="summary">1-2 месяца</p>
+                </div>
+            </div>
+        </div><!-- end of content-container -->
+    </div><!-- end of registration -->
+
+    <div id="feedback">
+        <div class="content-container">
+            <div class="title-container">
+                <h3>Реальные отзывы<span>о бюро Железно</span></h3>
+            </div>
+            <div id="feedback-slider" class="columns">
+                <div class="item">
+                    <div class="client columns">
+                        <div class="img-container">
+                            <picture>
+                                <source class="lazy" data-src="images/feedback/client1.webp" type="image/webp">
+                                <img class="lazy" data-src="images/feedback/client1.jpg"
+                                     alt="Отзыв клиента о патентном бюро Железно" title="Отзывы о патентном бюро">
+                            </picture>
+                        </div>
+                        <div class="client-info">
+                            <p><b>Гайнутдинов Анатолий</b></p>
+                            <p>Индивидуальный предприниматель</p>
+                            <p>Сферы деятельности: производство, розничная продажа, интернет-магазин</p>
+                            <p>Работаем с 2016 года. <br/> Зарегистрировали: <b>4 товарных знака</b>, <b>6 патентов на
+                                    полезную модель</b></p>
+                        </div>
+                    </div>
+                    <div class="text">
+                        <p class="feedback-title">До "Железно" успели поработать с двумя Московскими компаниями</p>
+                        <p>По роду деятельности нам приходится уделять огромное внимание интеллектуальной собственности. Конкуренты постоянно проверяют нас на прочность - копируют наши идеи, настраивают свою рекламу по нашим брендам.</p>
+                        <p>С начала 2016 года, когда проблема встала наиболее остро, нам пришлось искать ее решение.</p>
+                        <?= $pr14 ?> Сами неправильно оформили заявку и заставили нас заплатить за ее переоформление и ответ экспертизе. <?= $pr15 ?>
+                        <p class="more hidden">Со вторыми работать даже не начали. Они изначально забраковали все наши
+                            бренды и очень настойчиво предлагали их доработать.</p>
+                        <p class="more hidden">С этим же списком брендов обратились в компанию "Железно", они очень
+                            досконально изучили нашу деятельность, подобрали нужные нам классы МКТУ и зарегистрировали
+                            все (!) названия без всяких изменений.</p>
+                        <p class="more hidden">Естественно, с тех пор работаем только с этой компанией и по товарным
+                            знакам и по патентам на полезные модели.</p>
+                        <p class="more-button"><span class="blue">Подробнее</span></p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="client columns">
+                        <div class="img-container">
+                            <picture>
+                                <source class="lazy" data-src="images/feedback/client_7.webp" type="image/webp">
+                                <img class="lazy" data-src="images/feedback/client_7.jpg"
+                                     alt="Отзыв клиента о патентном бюро Железно" title="Отзывы о патентном бюро">
+                            </picture>
+                        </div>
+                        <div class="client-info">
+                            <p><b>Торопов Константин</b></p>
+                            <p>Индивидуальный предприниматель</p>
+                            <p>Сфера деятельности - производство и ритейл</p>
+                            <p>Работаем с 2019 года<br/>Оформлен <b>1 договор отчуждения</b></p>
+                        </div>
+                    </div>
+                    <div class="text">
+                        <p class="feedback-title">Специалисты патентного бюро “Железно” помогли оформить сделку на отчуждение, и через 1,5 месяца я стал счастливым владельцем товарного знака.</p>
+                        <p>Как и многие собственники небольшого бизнеса, я понятия не имел, зачем нужно регистрировать товарные знаки. Когда решил продавать свою продукцию на “Озоне”, выяснилось, что без товарного знака этого не сделать.</p>
+                        <p>Обратился в патентное бюро “Железно” за помощью. На этапе проверки выяснилось, что мой знак уже зарегистрирован в нужном классе МКТУ, но можно связаться с хозяином знака и попытаться договориться.</p>
+                        <p class="more hidden">Оказалось, что товарный знак владелец не использует и готов его продать. Специалисты патентного бюро “Железно” помогли оформить сделку на отчуждение, и через 1,5 месяца я стал счастливым владельцем товарного знака.</p>
+                        <p class="more hidden">После этой истории зарегистрировал еще 1 свой знак. Теперь считаю, что вложения в интеллектуальную собственность необходимы, если вы всерьез занимаетесь своим делом и планируете развивать бизнес. Спасибо сотрудникам “Железно” не только за успешное отчуждение, но и за подробные консультации.</p>
+                        <p class="more-button"><span class="blue">Подробнее</span></p>
+                    </div>
+                </div>           
+
+            </div>
+            <div class="title-container">
+                <p class="title">Не все верят отзывам в интернете, <span>поэтому ...</span></p>
+                <p class="subtitle">Мы подготовили для вас сканы писем наших клиентов. <span>Убедитесь сами!</span></p>
+            </div>
+            <div class="gallery gallery-3 columns">
+                <div class="item-3">
+                    <a class="fancybox-gallery" data-fancybox="otzyvy" href="images/feedback/otzyv1.jpg">
+                        <picture>
+                            <source class="lazy" data-src="images/feedback/otzyv1-mini.webp" type="image/webp">
+                            <img class="lazy" data-src="images/feedback/otzyv1-mini.jpg" alt=""/>
+                        </picture>
+                    </a>
+                    <p class="info"><span>"Гоу Мобайл"</span>, Рекламное агенство</p>
+                </div>
+                <div class="item-3">
+                    <a class="fancybox-gallery" data-fancybox="otzyvy" href="images/feedback/otzyv2.jpg">
+                        <picture>
+                            <source class="lazy" data-src="images/feedback/otzyv2-mini.webp" type="image/webp">
+                            <img class="lazy" data-src="images/feedback/otzyv2-mini.jpg" alt=""/>
+                        </picture>
+                    </a>
+                    <p class="info"><span>"Умное топливо"</span>, Производство угольных брикетов</p>
+                </div>
+                <div class="item-3">
+                    <a class="fancybox-gallery" data-fancybox="otzyvy" href="images/feedback/otzyv3.jpg">
+                        <picture>
+                            <source class="lazy" data-src="images/feedback/otzyv3-mini.webp" type="image/webp">
+                            <img class="lazy" data-src="images/feedback/otzyv3-mini.jpg" alt=""/>
+                        </picture>
+                    </a>          
+                    <p class="info"><span>"Черный кант"</span>, Производство одежды и обуви</p>
+                </div>            
+            </div> 
+            <div class="button-container">
+                <a class="button" href="/otzyvy" target="_blank">Еще отзывы</a>
+            </div>
+        </div><!-- end of content-container -->
+    </div><!-- end of feedback -->
+
+    <div id="faq" class="<?= $webp ?>">
+        <div class="content-container">
+            <div class="faq-inner">
+                <div class="title-container">
+                    <p class="title"><?= $pr20 ?> </span></p>
+                </div>
+                <ol>
+                    <li>
+                        <p class="question">Можно ли зарегистрировать товарный знак самостоятельно?</p>
+                        <div class="answer">
+                            <p>Да, конечно. Но, как показывает практика, выгоднее обратиться в патентное бюро:</p>
+                            <p>1. <?= $pr21 ?> Самые распространенные причины отказа: наличие уже зарегистрированных сходных знаков и неправильные ответы на уведомления ФИПС.</p>
+                            <p>2. При самостоятельной регистрации вы теряете огромное количество времени. Вам придется
+                                разобраться во множестве вопросов: от составления заявки до тонкостей экспертизы.</p>
+                            <p>3. <?= $pr22 ?></p>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="question">Сколько времени занимает регистрация?</p>
+                        <div class="answer">
+                            <p>Обычно наши клиенты получают свидетельство <b>за 6 месяцев с момента подачи
+                                    заявки</b>. Кто-то получает свидетельство раньше - уже через 2-3 месяцев, кто-то
+                                чуть позже - на 8-9 месяце. Вообще Роспатент, согласно внутренним регламентам, может
+                                проводить регистрацию до 18,5 месяцев.</p>
+                            <p><b>Процесс регистрации может затягиваться по многим причинам:</b></p>
+                            <p>1. Подача заявки и ведение переписки в бумажном виде: + 2-3 месяца;</p>
+                            <p>2. Несвоевременная оплата гос. пошлин: + 3-4 месяца;</p>
+                            <p>3. Неправильно оформленная заявка может повлечь за собой запросы экспертизы. Каждый
+                                запрос: + 2-3 месяца;</p>
+                            <p>4. Несвоевременные и неправильные ответы на уведомления и запросы экспертизы: +3-12
+                                месяцев.</p>
+                            <p><b>Мы ускоряем процесс регистрации до 6 месяцев, за счет исключения всех замедляющих
+                                    факторов:</b></p>
+                            <p>1. Подаем электронную заявку и ведем интернет-переписку;</p>
+                            <p>2. Тщательно подходим к оформлению каждой заявки;</p>
+                            <p>3. Контролируем процесс оплаты гос. пошлин;</p>
+                            <p>4. В течении 48 часов отвечаем на запросы экспертизы. При необходимости напрямую
+                                связываемся с экспертом который принимает решение.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="question">Что будет если Роспатент откажет в регистрации моего знака? Мне вернут
+                            деньги?</p>
+                        <div class="answer">
+                            <p>Если знаку отказывают в регистрации — мы <b>возвращаем вам полную стоимость наших
+                                    услуг</b>. Это прописано в договоре.</p>
+                            <p><?=$pr24?> Мы готовы взять эти риски на себя.</p>
+                            <p>Таким образом, даже при отрицательном решение Роспатента вы теряете только стоимость гос.
+                                пошлины за подачу заявки. Она составляет 10 500 руб. <b>Больше вы ничем не рискуете</b>.
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="question">Как долго действует товарный знак?</p>
+                        <div class="answer">
+                            <p>Регистрация товарного знака действует <b>10 лет</b>. По истечении данного срока
+                                регистрация может быть <b>продлена</b>.</p>
+                            <p><?=$pr25?> Иначе действие товарного
+                                знака может быть прекращено досрочно по причине ликвидации правообладателя.</p>
+                        </div>
+                    </li>
+                </ol>
+            </div>
+        </div><!-- end of content-container -->
+    </div><!-- end of faq -->
+
+    <div id="consultation" class="consultation">
+        <div class="content-container">
+            <div class="columns">
+                <div class="title-container <?= $webp ?>">
+                    <p class="consultation-title">Быстрая консультация</p>
+                    <p class="subtitle">Наш специалист перезвонит вам <span>в течение 10 минут</span></p>
+                </div>
+                <div class="form-container">
+                    <form method="post" action="success.php">
+                        <input type="hidden" name="title" value="consultation" autocomplete="off"><span
+                                class="name"></span>
+                        <label for="name" class="columns"><input type="text" name="name" placeholder="Ваше имя"
+                                                                 data-hint="имя" autocomplete="off"><span
+                                    class="name"></span></label>
+                        <label for="phone" class="columns"><input type="text" name="phone" placeholder="Ваш телефон"
+                                                                  data-hint="телефон" autocomplete="off"><span
+                                    class="phone"></span></label>
+                        <select class="custom-list" name="usluga">
+                            <option value="Регистрация товарного знака">Регистрация товарного знака</option>
+                            <option value="Ускоренная регистрация товарного знака">Ускоренная регистрация товарного знака</option>
+                            <option value="Продление товарного знака">Продление товарного знака</option>
+                            <option value="Аннулирование товарного знака">Аннулирование товарного знака</option>
+                            <option value="Другой вопрос">Другой вопрос</option>
+                        </select>
+                        <input type="submit" value="Есть вопрос" class="button">
+                    </form>
+                </div>
+            </div>
+        </div><!-- end of content-container -->
+    </div><!-- end of consultation -->
+
+</main><!-- end of content -->
+
+<footer id="footer">
+    <div class="content-container">
+        <div class="columns">
+            <div class="logo">
+                <div class="img-container">
+                    <picture>
+                        <source class="lazy" data-src="images/logo-footer.webp" type="image/webp">
+                        <img class="lazy" data-src="images/logo-footer.jpg" alt="Патентное бюро Железно"
+                             title="Официальный сайт патетного бюро Железно">
+                    </picture>
+                </div>
+                <p>Патентное бюро</p>
+            </div>
+            <ul id="footer-menu">
+                <li><a href="/prodlenie">Продление товарного знака</a></li>
+                <li><a href="/dogovor-otchuzhdeniya-peredacha-prava">Отчуждение товарного знака</a></li>
+                <li><a href="/licenzionnyj-dogovor">Лицензионный договор</a></li>
+            </ul>
+            <div id="requisites">
+                <p>ООО Патентное бюро "ЖЕЛЕЗНО"</p>
+                <p>ИНН 4345497285</p>
+                <p>ОГРН 1194350012867</p>
+            </div>
+            <div class="contacts">
+                <a class="phone" href="tel:84951047454">8 (495) 104-74-54</a>
+                <a class="email" href="mailto:info@tovarnyj-znak.ru">info@tovarnyj-znak.ru</a>
+                <p class="whatsapp"><a href="https://api.whatsapp.com/send?phone=79229092784<?= $whatsapp_text ?>" target="_blank">Написать в Whatsapp</a></p>
+            </div>
+            <div class="copyright columns">
+                <p>Все права защищены. Использование материалов разрешено только с согласия правообладателей.</p>
+                <p>Полное или частичное копирование сайта запрещено и преследуется по закону.</p>
+            </div>
+        </div>
+    </div><!-- end of content-container -->
+</footer>
+
+<div id="call-modal" class="form-popup">
+    <div class="form-container">
+        <p class="modal-title">Заказать звонок</p>
+        <p class="modal-subtitle">Мы перезвоним в течение 10 минут</p>
+        <form method="post" action="success.php">
+            <input type="hidden" name="title" value="Call-order"><span class="name"></span>
+            <label for="name" class="columns"><input type="text" name="name" placeholder="Ваше имя" data-hint="имя"
+                                                     autocomplete="off"><span class="name"></span></label>
+            <label for="phone" class="columns"><input type="text" name="phone" placeholder="Ваш телефон"
+                                                      data-hint="телефон" autocomplete="off"><span class="phone"></span></label>
+            <input type="submit" value="Заказать звонок" class="button button-green">
+        </form>
+    </div>
+</div>
+
+<div id="order-modal" class="form-popup">
+    <div class="form-container">
+        <p class="modal-title">Оставить заявку</p>
+        <p class="modal-subtitle">Мы перезвоним в течение 10 минут</p>
+        <form method="post" action="success.php">
+            <input type="hidden" name="title" value=""><span class="name"></span>
+            <label for="name" class="columns"><input type="text" name="name" placeholder="Ваше имя" data-hint="имя"
+                                                     autocomplete="off"><span class="name"></span></label>
+            <label for="phone" class="columns"><input type="text" name="phone" placeholder="Ваш телефон"
+                                                      data-hint="телефон" autocomplete="off"><span class="phone"></span></label>
+            <label for="email" class="columns"><input type="email" name="email" placeholder="Email (не обязательно)"
+                                                      data-hint="email" autocomplete="off"><span
+                        class="email"></span></label>
+            <input type="hidden" name="package" value="">
+            <input type="submit" value="Оставить заявку" class="button button-green">
+        </form>
+    </div>
+</div>
+
+<div id="roadmap-modal" class="form-popup">
+    <div class="form-container">
+        <p class="modal-title">Скачать <br/> дорожную карту</p>
+        <form method="post" action="success.php">
+            <input type="hidden" name="title" value="Map" autocomplete="off"><span class="name"></span>
+            <label for="name" class="columns"><input type="text" name="name" placeholder="Ваше имя" data-hint="имя"
+                                                     autocomplete="off"><span class="name"></span></label>
+            <label for="email" class="columns"><input type="email" name="email" placeholder="Email" data-hint="email"
+                                                      autocomplete="off"><span class="email"></span></label>
+            <input type="submit" value="Скачать" class="button button-green">
+        </form>
+    </div>
+</div>
+
+<div id="free-docs" class="form-popup">
+    <div class="big-container">
+        <div class="form-container <?= $webp ?>">
+            <p class="modal-title">Вам нужна эта информация!</p>
+            <p class="modal-subtitle">Получите <span>бесплатно</span> документы, которые сэкономят ваше время и деньги!
+            </p>
+            <ul>
+                <li><span>Таблица патентных бюро</span> Сравнительная таблиц с ценами и условиями сотрудничества.</li>
+                <li><span>5 ошибок при выборе патентного бюро</span> Как не переплатить за услуги и гарантированно
+                    зарегистрировать знак. Разбор схем мошенничества.
+                </li>
+                <li><span>7 способов “наказать” конкурентов с помощью товарного знака.</span> Примеры. Судебная
+                    практика. Контактная информация.
+                </li>
+            </ul>
+            <form method="post" action="success.php">
+                <input type="hidden" name="title" value="Free_docs">
+                <p class="modal-subtitle">Напишите нам в Whatsapp, и мы вышлем вам документы</p>
+                <div class="button-container">
+                    <a class="button button-light" href="https://api.whatsapp.com/send?phone=79229092784&text=%D0%A5%D0%BE%D1%87%D1%83%20%D0%BF%D0%BE%D0%BB%D1%83%D1%87%D0%B8%D1%82%D1%8C%20%D0%B4%D0%BE%D0%BA%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B" target="_blank">написать в Whatsapp</a>                    
+                </div>
+                <p class="no-whatsapp">У меня нет Whatsapp</p>
+                <div class="additional-block">
+                    <p class="note">Оставьте номер телефона, и мы перезвоним, чтобы согласовать удобный для вас способ получения документов.</p>
+                    <div class="columns">
+                        <label for="phone" class="columns"><input type="text" name="phone" placeholder="Ваш телефон" data-hint="телефон"><span class="phone"></span></label>
+                        <input type="submit" value="Получить документы" class="button button-green">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div id="patent-modal" class="form-popup">
+    <div class="popup-container">
+    </div>
+</div>
+    
+<div id="info-modal" class="form-popup">
+    <div class="info-container">
+        <p class="modal-title">Товарный знак "Под ключ" <span class="green">со скидкой <span class="nowrap">2000 руб.</span></span></p>
+        <p class="modal-subtitle">Новогодняя акция от патентного бюро "Железно".</p>
+        <div class="text">
+            <ol>
+                <li>Назовите менеджеру <span class="green">промокод 2021</span></li>
+                <li>Получите скидку 10% на регистрацию знака</li>
+            </ol>
+            <p><b>Промокод действует только <span class="green">до 31 января</span></b>.</p>
+            <p>Успей оставить заявку!</p>
+        </div>
+    </div>
+</div>    
+
+
+<link rel="stylesheet" href="styles/styles.css">
+<link rel="stylesheet" href="fancy/jquery.fancybox.min.css"/>
+<link rel="stylesheet" href="styles/slick-slider.css"/>
+
+<script src="scripts/jquery.js"></script>
+<script src="scripts/dynamicAdapt.js"></script>
+<script src="scripts/custom.js"></script>
+<script src="fancy/jquery.fancybox.min.js"></script>
+<script src="scripts/jquery-spincrement.js"></script>
+<script src="scripts/slick-slider.min.js"></script>
+<script src="scripts/jquery.maskedinput.js" async></script>
+<script src="scripts/lazyload.min.js" async></script>
+<script type="text/javascript" src="./scripts/utm_parser.js"></script>
+<!-- <script src="scripts/dinam.js"></script> -->
+
+
+<script type="text/javascript">
+    $('a[href="#order-modal"]').on('click', function() {
+        var package, form_title;
+        
+        package = $(this).data('package');
+        
+        switch (package) {
+          case 'Вариант 1':
+            form_title = 'Self';
+            break;
+          case 'Вариант 2':
+            form_title = 'Full';
+            break;
+          case 'Вариант 3':
+            form_title = 'Premium';
+            break;
+          case 'Вариант 4':
+            form_title = 'Logo-brand';
+            break;
+          case 'Вариант 5':
+            form_title = 'Price-fix';
+            break;                
+          default:
+            form_title = 'Self';
+        }       
+        
+        $('#order-modal').find('input[name="title"]').val(form_title);
+        
+        window.dataLayer = window.dataLayer || [];
+        
+    });
+</script>
+</body>
+</html>
