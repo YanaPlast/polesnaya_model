@@ -87,6 +87,7 @@
 #spheres .img-container img {
     max-height: 100%;
     object-fit: cover;
+    object-position: top left;
 }
 #spheres .item-wrapper {
     width: 50%;
