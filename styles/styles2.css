@@ -194,16 +194,19 @@
     padding-bottom: 60px;
 }
 #five_reasons p.title {
-    margin-bottom: 70px;
+    margin-bottom: 25px;
 }
 #five_reasons .columns-with-gap {
     justify-content: stretch;
- margin-bottom: 70px;
-    padding-bottom: 0;
-    padding-top: 0;
+    padding-bottom: 45px;
+    padding-top: 35px;
+    border-bottom: 1px solid #b5d1e2;
 }
 #five_reasons .columns-with-gap:nth-child(odd){
     flex-direction: row-reverse;
+}
+#five_reasons .columns-with-gap:last-child {
+    border-bottom: 0;
 }
 #five_reasons .item-wrapper {
     width: 50%;
