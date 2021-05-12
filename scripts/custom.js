@@ -341,6 +341,7 @@ $(document).ready(function () {
     }
     
 
+// слайдер для Пяти причин...
 
     $(window).resize(function () {
         if ((document.documentElement.clientWidth < 980)&&(document.documentElement.clientWidth >= 768)) {
@@ -431,8 +432,6 @@ function init_sphere() {
     });
 }
 
-// слайдер для Пяти причин...
-
 function init_reasons() {
     $('#five-reasons-slider').slick({
         infinite: true,
@@ -443,7 +442,6 @@ function init_reasons() {
         slidesToScroll: 1
     });
 }
-
 
 // наведение на миниатюры галереи
 function hover_effect(){
